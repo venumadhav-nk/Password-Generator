@@ -36,7 +36,7 @@ function Passwordgenerator() {
                         value={password}
                         readOnly
                     />
-                    <button className='btn btn-danger'>Copy</button>
+                    <button className='btn btn-success'>Copy</button>
 
                 </div>
                 <div className='d-flex align-items-center gap-3'>
