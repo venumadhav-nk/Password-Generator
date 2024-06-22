@@ -7,6 +7,10 @@ function Passwordgenerator() {
     const [length, setLength]= useState(8);
     const [isNumbersAllowed ,setNumberAllowed]= useState(false);
     const [isSpecialCharsAllowed,setSepecialCharsAllowed] =useState(false);
+    const handlecopy=()=>{
+        navigator.clipboard.writeText(password)
+        alert('Password was copied')
+    }
 
     const generatePassword = () => {
 
@@ -36,7 +40,7 @@ function Passwordgenerator() {
                         value={password}
                         readOnly
                     />
-                    <button className='btn btn-success'>Copy</button>
+                    <button className='btn btn-success' onClick={handlecopy}>Copy</button>
 
                 </div>
                 <div className='d-flex align-items-center gap-3'>
